@@ -1,0 +1,299 @@
+!!!
+/[if lt IE 7] <html class="no-js lt-ie9 lt-ie8 lt-ie7">
+/[if IE 7] <html class="no-js lt-ie9 lt-ie8">
+/[if IE 8] <html class="no-js lt-ie9">
+/ [if gt IE 8]><!
+%html.no-js
+  / <![endif]
+  %head
+    %meta{:charset => "utf-8"}/
+    %meta{:content => "IE=edge", "http-equiv" => "X-UA-Compatible"}/
+    %meta{:content => "width=device-width, initial-scale=1", :name => "viewport"}/
+    %title Boxify: Free HTML5/CSS3 Template by Peter Finlan
+    %meta{:content => "A free HTML5/CSS3 template made exclusively for Codrops by Peter Finlan", :name => "description"}/
+    %meta{:content => "html5 template, css3, one page, animations, agency, portfolio, web design", :name => "keywords"}/
+    %meta{:content => "Peter Finlan", :name => "author"}/
+    / Bootstrap
+
+    %link{:href => "http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css", :rel => "stylesheet"}/
+    %link{:href => "http://fonts.googleapis.com/css?family=Nunito:400,300,700", :rel => "stylesheet", :type => "text/css"}/
+
+    / Facebook and Twitter integration
+    %meta{:content => "", :property => "og:title"}/
+    %meta{:content => "", :property => "og:image"}/
+    %meta{:content => "", :property => "og:url"}/
+    %meta{:content => "", :property => "og:site_name"}/
+    %meta{:content => "", :property => "og:description"}/
+    %meta{:content => "", :name => "twitter:title"}/
+    %meta{:content => "", :name => "twitter:image"}/
+    %meta{:content => "", :name => "twitter:url"}/
+    %meta{:content => "", :name => "twitter:card"}/
+    / HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries
+    / WARNING: Respond.js doesn't work if you view the page via file://
+    /[if lt IE 9]
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+  %body
+    /[if lt IE 7]
+      <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+    / open/close
+    %header
+      %section.hero
+        .texture-overlay
+        .container
+          .row.nav-wrapper
+            .col-md-6.col-sm-6.col-xs-6.text-left
+              %a{:href => "#"}
+                =image_tag("logo-white.png", alt:"Boxify Logo")
+                / %img{:alt => "Boxify Logo", :src => "img/logo-white.png"}/
+            .col-md-6.col-sm-6.col-xs-6.text-right.navicon
+              %p MENU
+              %a#trigger-overlay.nav_slide_button.nav-toggle{:href => "#"}
+                %span
+          .row.hero-content
+            .col-md-12
+              %h1.animated.fadeInDown An Exclusive, Premium HTML5 & CSS3 Template by Peter Finlan, for Codrops.
+              %a.use-btn.animated.fadeInUp{:href => "http://tympanus.net/codrops/?p=22554"} Use it for free
+              %a.learn-btn.animated.fadeInUp{:href => "#about"}
+                Learn more
+                %i.fa.fa-arrow-down
+    %section#about.video
+      .container
+        .row
+          .col-md-12.text-center
+            %h1
+              %a.youtube-media{:href => "http://www.youtube.com/embed/9No-FiEInLA?autoplay=1&wmode=opaque&fs=1"}
+                %i.fa.fa-play-circle-o
+                Watch the Video
+    %section.features-intro
+      .container-fluid
+        .row
+          .col-md-6.nopadding.features-intro-img
+            .features-bg
+              .texture-overlay
+              .features-img.wp1
+                %img{:alt => "HTML5 Logo", :src => "img/html5-logo.png"}/
+          .col-md-6.nopadding
+            .features-slider
+              %ul#featuresSlider.slides
+                %li
+                  %h1 The Fore-front of Design & Technology
+                  %p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed a lorem quis neque interdum consequat ut sed sem. Duis quis tempor nunc. Interdum et malesuada fames ac ante ipsum primis in faucibus.
+                  %p
+                    %a.arrow-btn{:href => "#features"}
+                      Find out why this freebie rocks!
+                      %i.fa.fa-long-arrow-right
+                %li
+                  %h1 Multi-Purpose User Centric Design
+                  %p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed a lorem quis neque interdum consequat ut sed sem. Duis quis tempor nunc. Interdum et malesuada fames ac ante ipsum primis in faucibus.
+                  %p
+                    %a.arrow-btn{:href => "http://tympanus.net/codrops/?p=22554"}
+                      Find out why this freebie rocks!
+                      %i.fa.fa-long-arrow-right
+                %li
+                  %h1 Made with Love, Released for Free
+                  %p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed a lorem quis neque interdum consequat ut sed sem. Duis quis tempor nunc. Interdum et malesuada fames ac ante ipsum primis in faucibus.
+                  %p
+                    %a.arrow-btn{:href => "http://tympanus.net/codrops/?p=22554"}
+                      Find out why this freebie rocks!
+                      %i.fa.fa-long-arrow-right
+    %section#features.features-list
+      .container
+        .row
+          .col-md-12
+            .col-md-4.feature-1.wp2
+              .feature-icon
+                %i.fa.fa-desktop
+              .feature-content
+                %h1 Responsive
+                %p Built using HTML5/CSS3 and jQuery, and built using one of the world's most powerful CSS frameworks available, Bootstrap.
+                %a.read-more-btn{:href => "http://tympanus.net/codrops/?p=22554"}
+                  Read More
+                  %i.fa.fa-chevron-circle-right
+            .col-md-4.feature-2.wp2.delay-05s
+              .feature-icon
+                %i.fa.fa-flash
+              .feature-content
+                %h1 Multi-Purpose
+                %p Perfect if you run your own start-up, product or service. Boxify can showcase your business converting your visits to income.
+                %a.read-more-btn{:href => "http://tympanus.net/codrops/?p=22554"}
+                  Read More
+                  %i.fa.fa-chevron-circle-right
+            .col-md-4.feature-3.wp2.delay-1s
+              .feature-icon
+                %i.fa.fa-heart
+              .feature-content
+                %h1 Absolutely Free
+                %p
+                  As aways, download Boxify for free exclusively from Codrops. If you love Boxify and want to thank me, simply
+                  = succeed "." do
+                    %a{:href => "http://peterfinlan.com/"} buy me a beer
+                %a.read-more-btn{:href => "http://tympanus.net/codrops/?p=22554"}
+                  Read More
+                  %i.fa.fa-chevron-circle-right
+    %section.showcase
+      .showcase-wrap
+        .texture-overlay
+        .container
+          .row
+            .col-md-6
+              .device.wp3
+                .device-content
+                  .showcase-slider
+                    %ul#showcaseSlider.slides
+                      %li
+                        %img{:alt => "Device Content Image", :src => "img/screen1.jpg"}/
+                      %li
+                        %img{:alt => "Device Content Image", :src => "img/screen2.jpg"}/
+                      %li
+                        %img{:alt => "Device Content Image", :src => "img/screen3.jpg"}/
+            .col-md-6
+              %h1 Showcase your Product or Service
+              %p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed a lorem quis neque interdum consequat ut sed sem. Duis quis tempor nunc. Interdum et malesuada fames ac ante ipsum primis in faucibus.
+              %blockquote.team-quote
+                .avatar
+                  %img{:alt => "User Avatar", :src => "img/avatar.png"}/
+                %p "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed a lorem quis neque interdum consequat ut sed sem. Duis quis tempor nunc." - Peter Finlan
+                .logo-quote
+                  %a{:href => "http://tympanus.net/codrops/"}
+                    %img{:alt => "Codrops Logo", :src => "img/codrops-logo.png"}/
+              %a.download-btn{:href => "http://tympanus.net/codrops/?p=22554"}
+                Download!
+                %i.fa.fa-download
+    %section.screenshots-intro
+      .container
+        .row
+          .col-md-12
+            %h1 Packed Full of Powerful Features
+            %p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed a lorem quis neque interdum consequat ut sed sem. Duis quis tempor nunc. Interdum et malesuada fames ac ante ipsum primis in faucibus.
+            %p
+              %a.arrow-btn{:href => "#screenshots"}
+                See the screenshots!
+                %i.fa.fa-long-arrow-right
+    %section#screenshots.screenshots
+      .container-fluid
+        .row
+          %ul.grid
+            %li
+              %figure
+                %img{:alt => "Screenshot 01", :src => "img/01-screenshot.jpg"}/
+                %figcaption
+                  .caption-content
+                    %a.single_image{:href => "img/large/01.jpg"}
+                      %i.fa.fa-search
+                      %br/
+                      %p Optimised For Design
+            %li
+              %figure
+                %img{:alt => "Screenshot 01", :src => "img/02-screenshot.jpg"}/
+                %figcaption
+                  .caption-content
+                    %a.single_image{:href => "img/large/02.jpg"}
+                      %i.fa.fa-search
+                      %br/
+                      %p User Centric Design
+            %li
+              %figure
+                %img{:alt => "Screenshot 01", :src => "img/03-screenshot.jpg"}/
+                %figcaption
+                  .caption-content
+                    %a.single_image{:href => "img/large/03.jpg"}
+                      %i.fa.fa-search
+                      %br/
+                      %p Responsive and Adaptive
+            %li
+              %figure
+                %img{:alt => "Screenshot 01", :src => "img/04-screenshot.jpg"}/
+                %figcaption
+                  .caption-content
+                    %a.single_image{:href => "img/large/04.jpg"}
+                      %i.fa.fa-search
+                      %br/
+                      %p Absolutely Free
+        .row
+          %ul.grid
+            %li
+              %figure
+                %img{:alt => "Screenshot 01", :src => "img/05-screenshot.jpg"}/
+                %figcaption
+                  .caption-content
+                    %a.single_image{:href => "img/large/05.jpg"}
+                      %i.fa.fa-search
+                      %br/
+                      %p Multi-Purpose Design
+            %li
+              %figure
+                %img{:alt => "Screenshot 01", :src => "img/06-screenshot.jpg"}/
+                %figcaption
+                  .caption-content
+                    %a.single_image{:href => "img/large/06.jpg"}
+                      %i.fa.fa-search
+                      %br/
+                      %p Exclusive to Codrops
+            %li
+              %figure
+                %img{:alt => "Screenshot 01", :src => "img/07-screenshot.jpg"}/
+                %figcaption
+                  .caption-content
+                    %a.single_image{:href => "img/large/07.jpg"}
+                      %i.fa.fa-search
+                      %br/
+                      %p Made with Love
+            %li
+              %figure
+                %img{:alt => "Screenshot 01", :src => "img/08-screenshot.jpg"}/
+                %figcaption
+                  .caption-content
+                    %a.single_image{:href => "img/large/08.jpg"}
+                      %i.fa.fa-search
+                      %br/
+                      %p In Sydney, Australia
+    %section#download.download
+      .container
+        .row
+          .col-md-12.text-center.wp4
+            %h1 Seen Enough?
+            %a.download-btn{:href => "http://tympanus.net/codrops/?p=22554"}
+              Download!
+              %i.fa.fa-download
+    %footer
+      .container
+        .row
+          .col-md-5
+            %h1.footer-logo
+              %img{:alt => "Footer Logo Blue", :src => "img/logo-blue.png"}/
+            %p
+              © Boxify 2015 -
+              %a{:href => "http://tympanus.net/codrops/licensing/"} Licence
+              \- Designed & Developed by
+              %a{:href => "http://www.peterfinlan.com/"} Peter Finlan
+          .col-md-7
+            %ul.footer-nav
+              %li
+                %a{:href => "#about"} About
+              %li
+                %a{:href => "#features"} Features
+              %li
+                %a{:href => "#screenshots"} Screenshots
+              %li
+                %a{:href => "#download"} Download
+    .overlay.overlay-boxify
+      %nav
+        %ul
+          %li
+            %a{:href => "#about"}
+              %i.fa.fa-heart>
+              About
+          %li
+            %a{:href => "#features"}
+              %i.fa.fa-flash>
+              Features
+        %ul
+          %li
+            %a{:href => "#screenshots"}
+              %i.fa.fa-desktop>
+              Screenshots
+          %li
+            %a{:href => "#download"}
+              %i.fa.fa-download>
+              Download
